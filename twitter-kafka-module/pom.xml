@@ -8,8 +8,12 @@
     <parent>
 		<groupId>com.shadai.microservice</groupId>
 		<artifactId>mskafkatwitter</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
+
+	<properties>
+		<twitter4j-stream.version>4.0.7</twitter4j-stream.version>
+	</properties>
 
 	<artifactId>twitter-kafka-module</artifactId>
 
@@ -28,6 +32,7 @@
         <dependency>
             <groupId>org.twitter4j</groupId>
             <artifactId>twitter4j-stream</artifactId>
+			<version>${twitter4j-stream.version}</version>
         </dependency>
 
         <dependency>
