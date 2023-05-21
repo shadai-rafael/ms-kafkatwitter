@@ -20,7 +20,7 @@ SOFTWARE.
 package com.shadai.microservice.twitterkafkamodule.runner.impl;
 
 import com.shadai.microservice.twitterkafkamodule.runner.StreamRunner;
-import com.shadai.microservice.twitterkafkamodule.config.TwitterKafkaModuleConfigData;
+import com.shadai.microservice.appconfigdata.config.TwitterKafkaModuleConfigData;
 import com.shadai.microservice.twitterkafkamodule.listener.TwitterKafkaStatusListener;
 import java.util.Arrays;
 import javax.annotation.PreDestroy;

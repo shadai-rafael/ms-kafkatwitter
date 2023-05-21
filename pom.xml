@@ -17,7 +17,8 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>twitter-kafka-module</module>
+		<module>app-config-data</module>
+		<module>twitter-kafka-module</module>				
 	</modules>
 
 	<properties>

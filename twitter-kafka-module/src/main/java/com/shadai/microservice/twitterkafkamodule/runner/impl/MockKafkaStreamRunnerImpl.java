@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-import com.shadai.microservice.twitterkafkamodule.config.TwitterKafkaModuleConfigData;
+import com.shadai.microservice.appconfigdata.config.TwitterKafkaModuleConfigData;
 import com.shadai.microservice.twitterkafkamodule.exception.TwitterToKafkaExeption;
 import com.shadai.microservice.twitterkafkamodule.listener.TwitterKafkaStatusListener;
 import com.shadai.microservice.twitterkafkamodule.runner.StreamRunner;

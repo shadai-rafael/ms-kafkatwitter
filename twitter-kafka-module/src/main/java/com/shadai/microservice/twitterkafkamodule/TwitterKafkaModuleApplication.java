@@ -19,7 +19,7 @@ SOFTWARE.
 */
 package com.shadai.microservice.twitterkafkamodule;
 
-import com.shadai.microservice.twitterkafkamodule.config.TwitterKafkaModuleConfigData;
+import com.shadai.microservice.appconfigdata.config.TwitterKafkaModuleConfigData;
 import com.shadai.microservice.twitterkafkamodule.runner.StreamRunner;
 import java.util.Arrays;
 import java.util.stream.Stream;
@@ -28,10 +28,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.boot.CommandLineRunner;
 
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.shadai.microservice")
 public class TwitterKafkaModuleApplication implements CommandLineRunner{
 
 	private static final Logger LOG = LoggerFactory.getLogger(TwitterKafkaModuleApplication.class);
