@@ -1,4 +1,4 @@
-package com.shadai.twitter.kafka.config;
+package com.shadai.config.app.listener;
 
 import java.util.List;
 

@@ -1,7 +1,3 @@
-spring:
-    application:
-        name: kafka-twitter
-
 twitter-to-kafka-service:
     twitter-keywords:
         - Java
@@ -14,4 +10,3 @@ twitter-to-kafka-service:
     mock-min-tweet-lenght: 5
     mock-max-tweet-lenght: 15
     mock-sleep-ms: 10000
-    

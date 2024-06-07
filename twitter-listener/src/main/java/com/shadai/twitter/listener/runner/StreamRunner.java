@@ -1,4 +1,4 @@
-package com.shadai.twitter.kafka.runner;
+package com.shadai.twitter.listener.runner;
 
 import twitter4j.TwitterException;
 

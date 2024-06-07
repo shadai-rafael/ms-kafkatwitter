@@ -9,14 +9,18 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	
-    <groupId>com.shadai</groupId>
-	<artifactId>twitter-kafka</artifactId>
+    <groupId>com.shadai.microservice</groupId>
+	<artifactId>twitter-listener</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>kafka-twitter</name>
 
 	<description>Kafka twitter project</description>
 	
 	<dependencies>
+		<dependency>
+			<groupId>com.shadai.microservice</groupId>
+			<artifactId>config-app</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -32,15 +36,8 @@
 		<dependency>
     		<groupId>org.projectlombok</groupId>
     		<artifactId>lombok</artifactId>
-    		<!--version>1.18.32</version-->
     		<scope>provided</scope>
 		</dependency>
-
-		<!--dependency>
-        	<groupId>org.twitter4j</groupId>
-        	<artifactId>twitter4j-core</artifactId>
-        	<version>4.0.7</version>
-    	</dependency-->
 
 		<dependency>
         	<groupId>org.twitter4j</groupId>
@@ -49,5 +46,14 @@
     	</dependency>
 	
 	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

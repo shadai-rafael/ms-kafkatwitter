@@ -1,6 +1,6 @@
-package com.shadai.twitter.kafka.runner.impl;
+package com.shadai.twitter.listener.runner.impl;
 
-import com.shadai.twitter.kafka.config.TwitterKafkaConfiguration;
+import com.shadai.config.app.listener.TwitterKafkaConfiguration;
 import com.shadai.twitter.kafka.listener.TwitterKafkaStatusListener;
 import com.shadai.twitter.kafka.runner.StreamRunner;
 

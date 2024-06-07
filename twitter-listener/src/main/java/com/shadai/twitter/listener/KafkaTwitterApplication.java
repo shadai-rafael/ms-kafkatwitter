@@ -1,4 +1,4 @@
-package com.shadai.twitter.kafka;
+package com.shadai.twitter.listener;
 
 import com.shadai.twitter.kafka.config.*;
 import com.shadai.twitter.kafka.runner.StreamRunner;
@@ -6,6 +6,7 @@ import com.shadai.twitter.kafka.runner.StreamRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.ComponentScan;
 
 import lombok.extern.slf4j.Slf4j;
 import lombok.AllArgsConstructor;
@@ -16,6 +17,7 @@ import java.util.Arrays;
 @Slf4j
 @SpringBootApplication
 @AllArgsConstructor
+@ComponentScan(basePackages = "com.shadai.twitter")
 public class KafkaTwitterApplication implements CommandLineRunner{
 
 	private final TwitterKafkaConfiguration kafkaTwitterConfiguration;

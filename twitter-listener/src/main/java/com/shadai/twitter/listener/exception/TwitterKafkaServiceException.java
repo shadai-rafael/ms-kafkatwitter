@@ -1,4 +1,4 @@
-package com.shadai.twitter.kafka.exception;
+package com.shadai.twitter.listener.exception;
 
 public class TwitterKafkaServiceException extends RuntimeException {
 

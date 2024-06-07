@@ -1,4 +1,4 @@
-package com.shadai.twitter.kafka.listener;
+package com.shadai.twitter.listener.listener;
 
 import twitter4j.Status;
 import twitter4j.StatusAdapter;

@@ -1,4 +1,4 @@
-package com.shadai.twitter.kafka.runner.impl;
+package com.shadai.twitter.listener.runner.impl;
 
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-import com.shadai.twitter.kafka.config.TwitterKafkaConfiguration;
+import com.shadai.config.app.listener.TwitterKafkaConfiguration;
 import com.shadai.twitter.kafka.exception.TwitterKafkaServiceException;
 import com.shadai.twitter.kafka.listener.TwitterKafkaStatusListener;
 import com.shadai.twitter.kafka.runner.StreamRunner;
