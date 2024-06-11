@@ -10,10 +10,10 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-import com.shadai.config.app.listener.TwitterKafkaConfiguration;
-import com.shadai.twitter.kafka.exception.TwitterKafkaServiceException;
-import com.shadai.twitter.kafka.listener.TwitterKafkaStatusListener;
-import com.shadai.twitter.kafka.runner.StreamRunner;
+import com.shadai.twitter.configapp.listener.TwitterKafkaConfiguration;
+import com.shadai.twitter.listener.exception.TwitterKafkaServiceException;
+import com.shadai.twitter.listener.listener.TwitterKafkaStatusListener;
+import com.shadai.twitter.listener.runner.StreamRunner;
 
 import lombok.extern.slf4j.Slf4j;
 import twitter4j.Status;
@@ -97,6 +97,7 @@ public class MockKafkaStreamRunner implements StreamRunner{
     @Override
     public void start() throws TwitterException {
         String[] keywords = twitterKafkaConfiguration.getTwitterkeywords().toArray(new String[0]);
+        log.info("size of the array {}",twitterKafkaConfiguration.getTwitterkeywords().size() );
         int maxLenght = twitterKafkaConfiguration.getMockMaxTweetLenght();
         int minLenght = twitterKafkaConfiguration.getMockMinTweetLenght();
         long mockSleepMs = twitterKafkaConfiguration.getMockSleepMs();

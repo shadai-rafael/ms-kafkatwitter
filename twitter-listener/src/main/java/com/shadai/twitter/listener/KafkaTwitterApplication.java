@@ -1,7 +1,7 @@
 package com.shadai.twitter.listener;
 
-import com.shadai.twitter.kafka.config.*;
-import com.shadai.twitter.kafka.runner.StreamRunner;
+import com.shadai.twitter.configapp.listener.TwitterKafkaConfiguration;
+import com.shadai.twitter.listener.runner.StreamRunner;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

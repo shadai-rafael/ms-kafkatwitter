@@ -1,5 +1,6 @@
-package com.shadai.config.app.listener;
+package com.shadai.twitter.configapp.listener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -14,7 +15,7 @@ import lombok.Data;
 @Configuration
 @ConfigurationProperties(prefix="twitter-to-kafka-service")
 public class TwitterKafkaConfiguration {
-    private List<String>  twitterkeywords;
+    private List<String> twitterkeywords = new ArrayList<>();
     private String welcomemessage;
     private Boolean enableMockTweets;
     private Long mockSleepMs;

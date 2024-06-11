@@ -1,8 +1,8 @@
 package com.shadai.twitter.listener.runner.impl;
 
-import com.shadai.config.app.listener.TwitterKafkaConfiguration;
-import com.shadai.twitter.kafka.listener.TwitterKafkaStatusListener;
-import com.shadai.twitter.kafka.runner.StreamRunner;
+import com.shadai.twitter.configapp.listener.TwitterKafkaConfiguration;
+import com.shadai.twitter.listener.listener.TwitterKafkaStatusListener;
+import com.shadai.twitter.listener.runner.StreamRunner;
 
 import jakarta.annotation.PreDestroy;
 
